@@ -1,0 +1,61 @@
+opacity -> [-1,1] -> lower the value, higher the transparency
+
+border : 2px (width of the border)
+
+border : 2px style color (all in one) equivalent to
+border : 2px;
+border-style : style
+border-color : color
+
+
+background-image : url() -> to put background images
+
+background-repeat : repeat-x/y -> how we want to repeat the images
+Userful for gradients
+
+background-position : left/right/center/top/bottom left/right/center/top/bottom
+To specify the background image position
+
+background-attachmennt : scroll/fixed -> Will the image move when the page will scroll or not
+
+
+SHORTHAND
+background-color : bgcol
+background-image : url()
+background-repeat : bgrep
+background-attachment: bgatt
+background-position : bgpos
+Can be written as
+background : bgcol url() bgrep bgatt bgpos
+
+
+For all properties of border,
+1 value -> All
+2 values -> Top/bottom + left/right
+3 values -> Top + left/right + bottom
+4 values -> top + right + bottom + left
+
+border-radius : 10px -> To set curve of the edges of the border
+SHORTHAND
+border-bottom : size style* color
+
+border-top/bottom/left/right-color/style/width/radius
+
+
+visibility:hidden -> Hides the elememnt but takes up the space
+display: none -> Hides the element and does not takes up the space.
+
+
+position: relative; -> takes up some space for itself, manual positioning possible
+position: static; -> the default layout
+position: sticky; -> Sticks to the page when the scroll position is reached. manual positioning possible
+position: absolute; -> DOESnot takes up space for itself. manual positioning possible, takes
+up the positioning of the parent element, if corrdinates are not mentioned.
+
+If a content in a conitainer is very big to fit completely then we can do
+overflow:scroll -> This will add a scrolbar if the content is too big.
+overflow-x: scroll/auto/hidden/visible -> (for horizontal setting)
+overflow-y: scroll/auto/hidden/visible -> (for vertical setting)
+
+
+https://picsum.photos/200
