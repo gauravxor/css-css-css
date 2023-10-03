@@ -1,0 +1,59 @@
+<!-- Navbar -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        ul {
+            display: flex;
+            background-color: #333333;
+            justify-content: left;
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            list-style: none;
+            margin-top: 0px;
+            margin-bottom: 0px;
+            padding: 15px 15px;
+        }
+
+        li.right {
+            margin-left: auto;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        li:hover {
+            background-color: #000000;
+        }
+
+        li:active,
+        li.selected {
+            background-color: #04aa6d;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li class="left selected"><a href="#">Home</a></li>
+        <li class="left"><a href="#">News</a></li>
+        <li class="left"><a href="#">Contact</a></li>
+        <li class="right"><a href="#">About</a></li>
+    </ul>
+</body>
+
+</html>
