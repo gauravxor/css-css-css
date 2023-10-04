@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        p.custom-info-bar {
+            margin: 0;
+            padding: 0;
+            font-size: 20px;
+            text-align: center;
+            border: 1px solid white;
+            background-color: aqua;
+        }
+
+        header {
+            background-color: red;
+            border: 2px solid black;
+        }
+
+        ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: nowrap;
+            flex-direction: row;
+            font-size: 20px;
+        }
+
+        li {
+            padding: 10px;
+            color: white;
+        }
+
+        li:hover {
+            background-color: yellow;
+            color: black;
+            font-weight: bolder;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .main-body {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            flex-flow: row;
+        }
+
+
+        .left-container {
+            border-left: 2px solid black;
+            border-right: 2px solid black;
+            border-bottom: 2px solid black;
+            background-color: blueviolet;
+            flex: 20%;
+
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+        }
+
+        .center-container {
+            border-right: 2px solid black;
+            border-bottom: 2px solid black;
+            background-color: chocolate;
+            flex: 60%;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+
+        }
+
+        .right-container {
+            border-right: 2px solid black;
+            border-bottom: 2px solid black;
+            background-color: aqua;
+            flex: 20%;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+        }
+
+        .left-item {
+            flex: 1;
+            border: 2px solid black;
+            padding: 10px;
+            text-align: center;
+            color: rgb(0, 0, 0);
+        }
+
+        .center-item {
+            border: 2px solid black;
+            padding: 10px;
+            text-align: center;
+            color: rgb(0, 0, 0);
+            flex: 1;
+        }
+
+        .right-item {
+            border: 2px solid black;
+            padding: 10px;
+            text-align: center;
+            color: rgb(0, 0, 0);
+            flex: 1;
+        }
+        .left-item:hover,
+        .right-item:hover,
+        .center-item:hover {
+            background-color: deeppink;
+            cursor: pointer;
+            color:floralwhite;
+            font-weight: bold;
+        }
+
+        .footer-container {
+            background-color: rgb(141, 141, 232);
+            font-size: 20px;
+            text-align: center;
+            border-bottom: 2px solid black;
+            border-left: 2px solid black;
+            border-right: 2px solid black;
+        }
+
+        @media screen and (max-width: 700px) {
+            ul {
+                flex-direction: column;
+                align-items: center
+            }
+            li {
+                width: 100%;
+                text-align: center;
+                border: 1px solid rgb(102, 102, 122);
+            }
+            .main-body,
+            .right-container,
+            .center-container,
+            .left-container {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="top-bar">
+        <p class="custom-info-bar"> This is a section of custom messages </p>
+    </div>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Profile</a></li>
+                <li><a href="#">Project</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="main-body">
+        <div class="left-container">
+            <div class="left-item">Left Content 1</div>
+            <div class="left-item">Left Content 2</div>
+            <div class="left-item">Left Content 3</div>
+            <div class="left-item">Left Content 4</div>
+        </div>
+        <div class="center-container">
+            <div class="center-item">Center Content 1</div>
+            <div class="center-item">Center Content 2</div>
+            <div class="center-item">Center Content 3</div>
+            <div class="center-item">Center Content 4</div>
+        </div>
+        <div class="right-container">
+            <div class="right-item">Right Content 1</div>
+            <div class="right-item">Right Content 2</div>
+            <div class="right-item">Right Content 3</div>
+            <div class="right-item">Right Content 4</div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <p> This is the footer content </p>
+        </div>
+    </footer>
+</body>
+
+</html>
